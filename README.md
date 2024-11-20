@@ -87,9 +87,43 @@ This approach provides a balance between marketing incentives and customer conve
 3. 50% off Upto 100 coupon - in this a threshold amount for discount (say 100) can be set. Example Total Amount is 1000, if 50% is applied to it discount will be 500, so in this case if discount exceeds threshold amount for discount then minimum of 100 and 500 will be applied
 
 ● Sample Request Response
-POST /coupons: Create a new coupon.
+POST /coupons/post: Create a new coupon.
 
 <img width="1035" alt="Screenshot 2024-11-21 at 3 22 51 AM" src="https://github.com/user-attachments/assets/a61cd8bf-ca2b-4304-b337-887a7b17d97f">
+
+GET /coupons/get: Retrieve all coupons.
+<img width="1034" alt="Screenshot 2024-11-21 at 3 25 21 AM" src="https://github.com/user-attachments/assets/5d625cf4-3339-4ab0-9c5d-e44d633c3d3e">
+
+GET /coupons/{id}: Retrieve a specific coupon by its ID.
+
+<img width="1027" alt="Screenshot 2024-11-21 at 3 26 39 AM" src="https://github.com/user-attachments/assets/d019eb5e-74d1-4fe2-b5b5-dd48234df7ad">
+
+PUT /coupons/{id}: Update a specific coupon by its ID.
+<img width="1033" alt="Screenshot 2024-11-21 at 3 28 30 AM" src="https://github.com/user-attachments/assets/9900d748-6f55-4f0e-945a-08c019a22308">
+
+
+DELETE /coupons/{id}: Delete a specific coupon by its ID.
+<img width="1038" alt="Screenshot 2024-11-21 at 3 28 58 AM" src="https://github.com/user-attachments/assets/aa2e8df9-1332-4aad-8514-5fb9111e8adf">
+
+POST /applicable-coupons: Fetch all applicable coupons for a given cart and
+calculate the total discount that will be applied by each coupon.
+<img width="1020" alt="Screenshot 2024-11-21 at 3 32 42 AM" src="https://github.com/user-attachments/assets/6912fc2d-87ff-489c-9eca-e72a31231193">
+<img width="958" alt="Screenshot 2024-11-21 at 3 32 55 AM" src="https://github.com/user-attachments/assets/9ad39ae3-fdeb-4565-9785-f351e7e62257">
+
+● In bxgy discount, for now in the response both totalDiscount and finalPrice the quantity of item that customer will get free. 
+
+
+POST /apply-coupon/{id}: Apply a specific coupon to the cart and return the
+updated cart with discounted prices for each item.
+<img width="1030" alt="Screenshot 2024-11-21 at 3 37 51 AM" src="https://github.com/user-attachments/assets/eb8fd26a-2a09-44b1-8298-a1881354bd38">
+<img width="1019" alt="Screenshot 2024-11-21 at 3 37 35 AM" src="https://github.com/user-attachments/assets/fcd39973-a1f8-48a5-9f72-f4328af46340">
+
+
+
+
+<img width="1016" alt="Screenshot 2024-11-21 at 3 37 23 AM" src="https://github.com/user-attachments/assets/c0bdf0fb-0655-419f-86d8-775ad47028d2">
+
+
 
 
    
