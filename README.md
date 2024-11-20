@@ -13,6 +13,8 @@ Cart - request body for cart
 Item - embedded item for Cart, since list of items are received in cart
 CartResponse - response object after the application of coupons
 
+NOTE - all the amount are in int data type (for the ease to apply for all coupon types), it can be in double 
+
 API Endpoints:
 ● POST /coupons: Create a new coupon.
 ● GET /coupons: Retrieve all coupons.
