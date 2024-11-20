@@ -127,5 +127,5 @@ updated cart with discounted prices for each item.
 
 
 
-
+NOTE - Added some basic unit tests
    
